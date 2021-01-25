@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+#head{
+position:fixed;
+top:-15;
+z-index:9999;
+}
+
+#form{
+position:fixed;/*フォームの相対位置*/
+max-width:300px;/*フォームのサイズ*/
+margin-bottom:15px;/*フォームの下に余白*/
+top:5;
+}
+#sbox{
+height:40px;/*検索ボックスの高さ*/
+width:500px;
+padding:0 10px;/*テキスト位置調整*/
+position:fixed;/*フォームの絶対位置*/
+left:310;
+top:5;
+border-radius:2px 0 0 2px;/*検索ボックスの角を丸める*/
+outline:0;/*クリック時の青い枠線消す*/
+background:#eee;/*検索ボックスの背景カラー*/
+}
+#sbtn{
+height:25px;/*検索ボタンの縦幅*/
+width:30px;/*検索ボタンの横幅*/
+position:fixed;/*検索ボタンの絶対位置*/
+left:820px;/*検索ボタンの位置調整*/
+top:10;
+background:#FFFFFF;/*検索ボタンの背景カラー*/
+color:#fff;/*検索ボタンのテキストカラー*/
+border:none;/*検索ボタンの枠線を消す*/
+border-radius:0 2px 2px 0;/*検索ボタンの角を丸める*/
+font-weight:bold;/*検索ボタンのテキスト太字*/
+font-size:16px;/*検索ボタンのフォントサイズ*/
+}
+#sbtn:hover{
+color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/
+}
+#login{
+position:fixed;
+left:1150px;
+top:-7;
+}
+.pull {
+width: 150px;
+height: 40px;
+padding:0 10px;/*テキスト位置調整*/
+position:fixed;/*フォームの絶対位置*/
+left: 880px;
+top:-12;
+}
+.pull li {
+  position: relative;
+  list-style: none;
+}
+.pull li a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  color: 	#000000;
+  font-size: 14px;
+  line-height: 2.8;
+  background: #FFFFFF;
+  text-decoration: none;
+  border-right: 1px solid #eee;
+  box-sizing: border-box;
+}
+.pull > li:hover > a {/*layer-1*/
+  color: black;
+  background: #FFFFFF;
+}
+.pull > li li:hover > a {/*layer-2*/
+  color: orange;
+  background: #FFFFFF;
+}
+.pull li ul {
+  top: 40px;
+  left: -40px;
+  position: absolute;
+}
+.pull li ul li {
+  overflow: hidden;
+  height: 0;
+}
+.pull li ul li a {
+  border-top: 1px solid #eee;
+}
+.pull li:hover > ul > li {
+  overflow: visible;
+  height: 40px;
+}
+  .pull li ul li ul {
+    top: 0;
+    left: 110px;
+  }
+  .pull li ul li ul:before {/*layer-2▷*/
+    position: fixed;
+    content: "";
+    top: 15px;
+    left: 30px;
+    border: 5px solid transparent;
+    border-left: 5px solid #fff;
+  }
+  .pull li ul li ul li:hover > a {/*layer-3*/
+    color: pink;
+    background: #afc6e2;
+  }
+  .pull li ul li ul.left {
+    top: 0;
+    left: -190px;
+  }
+  .pull li ul li ul.left:before,/*layer-2-left▷*/
+  .pull li ul li ul li ul.left:before {/*layer-3-left▷*/
+    position: fixed;
+    content: "";
+    top: 15px;
+    left: 190px;
+    border: 5px solid transparent;
+    border-right: 5px solid #fff;
+  }
+  .pull li ul li ul.left li:hover > a {/*layer-2-left*/
+    color: pink;
+    background: #afc6e2;
+  }
+  .pull li ul li ul li ul.left li:hover > a {/*layer-3-left*/
+    color: purple;
+    background: #afc6e2;
+  }
+  #cbtn{
+height:30px;/*検索ボタンの縦幅*/
+width:40px;/*検索ボタンの横幅*/
+position:fixed;/*検索ボタンの絶対位置*/
+left:1060px;/*検索ボタンの位置調整*/
+top:10;
+background:#FFFFFF;/*検索ボタンの背景カラー*/
+color:#fff;/*検索ボタンのテキストカラー*/
+border:none;/*検索ボタンの枠線を消す*/
+border-radius:0 2px 2px 0;/*検索ボタンの角を丸める*/
+font-weight:bold;/*検索ボタンのテキスト太字*/
+font-size:16px;/*検索ボタンのフォントサイズ*/
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ddd;
+  padding: 0.4em;
+  margin: 0 0 2em;
+}
+.flexbox > div {
+  background: #ddd;
+  padding: 1em;
+  flex: 1 0 300px;
+  margin: 0.4em;
+}
+.contents-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.contents-box {
+	margin-bottom: 3rem;
+	padding: 3rem;
+	width: 35%;
+	background-color: #FFFFFF;
+}
+.contents-box img {
+	display: block;
+	margin-bottom: 3rem;
+	width: 100%;
+	height: auto;
+}
+.contents-box h2 {
+	margin-bottom: 2rem;
+	font-size: 2.2rem;
+	text-align: center;
+}
+@media screen and (max-width: 768px){
+	.contents-wrap {
+		flex-direction: column;
+	}
+	.contents-box {
+		width: 100%;
+	}
+}
+

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+#box1{
+height:25px;/*検索ボックスの高さ*/
+width:250px;
+padding:0 10px;/*テキスト位置調整*/
+position:static;/*フォームの絶対位置*/
+border-radius:2px 0 0 2px;/*検索ボックスの角を丸める*/
+outline:0;/*クリック時の青い枠線消す*/
+background:#ffffff;/*検索ボックスの背景カラー*/
+}
+
+#box2{
+height:25px;/*検索ボックスの高さ*/
+width:250px;
+padding:0 10px;/*テキスト位置調整*/
+position:static;/*フォームの絶対位置*/
+border-radius:2px 0 0 2px;/*検索ボックスの角を丸める*/
+outline:0;/*クリック時の青い枠線消す*/
+background:#ffffff;/*検索ボックスの背景カラー*/
+}
+
+#box3{
+height:25px;/*検索ボックスの高さ*/
+width:250px;
+padding:0 10px;/*テキスト位置調整*/
+position:static;/*フォームの絶対位置*/
+border-radius:2px 0 0 2px;/*検索ボックスの角を丸める*/
+outline:0;/*クリック時の青い枠線消す*/
+background:#ffffff;/*検索ボックスの背景カラー*/
+}
+
+#box4{
+height:25px;/*検索ボックスの高さ*/
+width:250px;
+padding:0 10px;/*テキスト位置調整*/
+position:static;/*フォームの絶対位置*/
+border-radius:2px 0 0 2px;/*検索ボックスの角を丸める*/
+outline:0;/*クリック時の青い枠線消す*/
+background:#ffffff;/*検索ボックスの背景カラー*/
+}
+
+.btnResult {
+display:inline-block;
+ border-radius : 5%;
+ font-size: 10pt;
+ cursor : pointer;
+ padding: 11px 42px;
+ background: #ffc531;
+ color: #000000;
+ line-height: 1em;
+ opacity: 0.9;
+}
+.button:hover {
+ opacity : 1;
+}
+
+.box {
+display: inline-block;
+padding: 0em 0em;
+margin: 3em 500;
+font-weight: bold;
+color: #000000;
+background: #FFF;
+border: solid 2px #d7d7d7;/*線*/
+border-radius: 5px;/*角の丸み*/
+}
+.box p {
+    margin: 10;
+    padding: 0;
+}
+
+.boxResult {
+display: inline-block;
+padding: 0em 0em;
+margin: 6em 500;
+font-weight: bold;
+color: #000000;
+background: #FFF;
+border: solid 2px #d7d7d7;/*線*/
+border-radius: 5px;/*角の丸み*/
+}
+.boxResult p {
+    margin: 20;
+    padding: 0;
+}
+
