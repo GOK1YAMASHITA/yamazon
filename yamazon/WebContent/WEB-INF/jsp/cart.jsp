@@ -43,6 +43,7 @@ int Total = 0;
 							<br>
 							<%} %>
 							<br>
+							現在の個数:<%=count %>個
 							現在の合計金額 :<%=Total %>円
 				</div>
 			</div>
